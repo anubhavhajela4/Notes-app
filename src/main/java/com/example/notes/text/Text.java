@@ -15,6 +15,7 @@ public class Text {
             strategy = GenerationType.SEQUENCE,
             generator = "text_sequence"
     )
+    private Integer id;
     private String content;
 
     public Text() {
@@ -22,6 +23,13 @@ public class Text {
 
     public Text(String content) {
         this.content = content;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getContent() {
