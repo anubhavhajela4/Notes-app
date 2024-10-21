@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY target/Notes-0.0.1-SNAPSHOT.jar.original app.jar
+COPY target/Notes.jar Notes.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","Notes.jar"]
